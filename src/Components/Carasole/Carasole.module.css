@@ -3,7 +3,7 @@
 }
 
 .CarasoleImg{
-    height: 550px;
+    height: 650px;
 }
 
 .CarasoleHeading{
@@ -13,4 +13,11 @@
     font-size: 25px;
     font-weight: 700;
     margin: 0px;
+}
+
+
+@media (min-width:250px) and (max-width:750px) {
+    .CarasoleImg{
+        height: 250px;
+    }
 }

@@ -2,8 +2,9 @@ import './App.css';
 import Heading from './Components/Heading/Heading';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-import Carasole from './Components/Carasole/Carasole';
+// import Carasole from './Components/Carasole/Carasole';
 import Home from './Components/Home/Home';
+import About from './Components/About/About';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Heading/>
       {/* <Carasole/> */}
       <Home/>
+      <About/>
     </div>
   );
 }

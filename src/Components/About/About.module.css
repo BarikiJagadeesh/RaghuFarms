@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.AboutHeading{
+    text-align: center;
+}
+
+.AboutHeading p{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.AboutData{
+    background-color: rgba(176, 131, 164, 0.76);
+}
+
+.AboutFormer{
+    
+    
+    display: flex;
+    align-items: center;
+}
+
+.FormerHeading{
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(81, 75, 75);
+    font-weight: 700;
+}
+
+.FromerIntro{
+    padding-left: 15px;
+}
+
+
+
+.AboutformerImg{
+  width: 100%;
+}
+
+
+
+/* From here Cultivating images go */
+
+.CultivateImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ImgContainer{
+    width: 380px;
+    border: 1px solid black;
+}
+
+.ImgContainer img{
+    height: 350px;
+    width: 100%;
+}
+
+.ImgContainer p{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.CulPara{
+    padding-left: 10px;
+}
+
+.CarasoleHeading{
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    background-color: rgb(149, 241, 82);
+    color: rgb(7, 1, 1);
+}
+
+@media (min-width:250px) and (max-width:750px) {
+    .AboutFormer{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+
+    }
+
+    .AboutformerImg img{
+        width: 100%;
+    }
+
+    .FormerHeading{
+        margin-top: 10px;
+    }
+
+    .ImgContainer{
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .ImgContainer img{
+        height: 200px;
+    }
+
+    .CultivateImg{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

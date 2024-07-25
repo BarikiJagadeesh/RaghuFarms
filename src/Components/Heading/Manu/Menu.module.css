@@ -26,6 +26,6 @@
 
 @media (min-width:250px) and (max-width:550px) {
     .MenuContainer{
-        /* width:100% */
+        width:100%
     }
 }

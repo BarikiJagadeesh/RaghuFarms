@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 .HomeHeading{
     text-align: center;
-    background-color: rgb(118, 237, 100);
+    background-color: rgb(100, 205, 237);
     padding: 5px;
     color: rgb(255, 255, 255);
 }
 
 .HomeHeading p{
     font-size: 20px;
-    font-weight: bold;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0px;
     
 }
