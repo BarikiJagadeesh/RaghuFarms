@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/RaghuFarms/static/css/main.c97f1c5f.css",
+    "main.js": "/RaghuFarms/static/js/main.d38f7dce.js",
+    "static/js/453.21d624fc.chunk.js": "/RaghuFarms/static/js/453.21d624fc.chunk.js",
+    "static/media/image.png": "/RaghuFarms/static/media/image.c8729b90969558b33e02.png",
+    "static/media/Logo.jpg": "/RaghuFarms/static/media/Logo.98351ba9cbf7a5a6a0c0.jpg",
+    "static/media/Tractor1.jpg": "/RaghuFarms/static/media/Tractor1.5a2a4c9b897ff86801eb.jpg",
+    "index.html": "/RaghuFarms/index.html",
+    "main.c97f1c5f.css.map": "/RaghuFarms/static/css/main.c97f1c5f.css.map",
+    "main.d38f7dce.js.map": "/RaghuFarms/static/js/main.d38f7dce.js.map",
+    "453.21d624fc.chunk.js.map": "/RaghuFarms/static/js/453.21d624fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c97f1c5f.css",
+    "static/js/main.d38f7dce.js"
+  ]
+}
