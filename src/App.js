@@ -5,16 +5,23 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 // import Carasole from './Components/Carasole/Carasole';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import {BrowserRouter as Router} from 'react-router-dom';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
   return (
-    <div className="App">
-      <Heading/>
-      {/* <Carasole/> */}
-      <Home/>
-      <About/>
-    </div>
+
+    <Router>
+      <div className="App">
+        <Heading/>
+        {/* <Carasole/> */}
+        <Home/>
+        <About/>
+        <Contact/>
+      </div>
+    </Router>
+    
   );
 }
 

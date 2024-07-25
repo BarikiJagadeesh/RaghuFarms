@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
+.HomeContainer{
+    margin-top: 110px;
+}
 .HomeHeading{
     text-align: center;
     background-color: rgb(100, 205, 237);
@@ -32,7 +34,28 @@
     opacity: 0.9;
 }
 
+.Scrollingcontainer{
+    background-color: orange;
+    width: 100%;
+}
+
+.scrollingText{
+    overflow: hidden;
+    color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin: 0px;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+
+}
+
 @media (min-width:250px) and (max-width:550px) {
+
+    .HomeContainer{
+        margin-top: 200px;
+    }
     .Video{
         height: 300px;
         width: 100%;
@@ -40,5 +63,19 @@
     }
     .HomeHeading p{
         font-size: 18px;
+    }
+
+    .scrollingText{
+        animation: scroll 10s linear infinite;
+    }
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(400%);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }

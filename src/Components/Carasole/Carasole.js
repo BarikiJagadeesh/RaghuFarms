@@ -2,7 +2,9 @@ import React from 'react';
 import styles from './Carasole.module.css';
 import Tractor from '../../Assets/TractorImgInWater.jpg';
 import Raghu from '../../Assets/Raghu_ox2.jpg';
-
+import Farm from '../../Assets/FarmImg.png';
+import RaghuFrnd from '../../Assets/RaghuFrnd.png';
+import TractorLoade from '../../Assets/TractorLoade.png';
 
 const Carasole = () => {
   return (
@@ -12,13 +14,15 @@ const Carasole = () => {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
                 <img src={Tractor} className={`d-block w-100 ${styles.CarasoleImg}`} alt="Tractor" />
                 <div className="carousel-caption d-none d-md-block">
                     <h5>Our Tractor</h5>
-                    <p className={` bg-secondary`}>Without this tractor we are nothing</p>
+                    <p className={``}>Without this tractor we are nothing</p>
                 </div>
                 </div>
                 <div className="carousel-item">
@@ -29,10 +33,24 @@ const Carasole = () => {
                 </div>
                 </div>
                 <div className="carousel-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRhacdDJX9XilloGIyY87GCyYHwNeCSCyfd10MtKDOT8N_4_TLmzcxGZm17UDa6v7MRq8&usqp=CAU" className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
+                <img src={Farm} className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
+                </div>
+                </div>
+                <div className="carousel-item">
+                <img src={RaghuFrnd} className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
+                <div className="carousel-caption d-none d-md-block">
+                    <h5>Mango</h5>
+                    <p>Eating Mango With My Friend</p>
+                </div>
+                </div>
+                <div className="carousel-item">
+                <img src={TractorLoade} className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
+                <div className="carousel-caption d-none d-md-block">
+                    <h5>Loading...</h5>
+                    <p>Loading the Ground Nuts to Tractor</p>
                 </div>
                 </div>
             </div>

@@ -53,6 +53,7 @@
 .ImgContainer{
     width: 380px;
     border: 1px solid black;
+    margin-top: 10px;
 }
 
 .ImgContainer img{
@@ -100,12 +101,12 @@
     }
 
     .ImgContainer{
-        width: 200px;
+        width: 150px;
         margin-top: 20px;
     }
 
     .ImgContainer img{
-        height: 200px;
+        height: 150px;
     }
 
     .CultivateImg{

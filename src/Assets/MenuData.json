@@ -1,18 +1,18 @@
 [
     {
         "Name":"Home",
-        "Link":"#Home"
+        "link":"#home"
     },
     {
         "Name":"About",
-        "Link": "#About"
+        "link": "#about"
     },
     {
         "Name": "Contact Us",
-        "Link":"#Contact"
+        "link":"#contact"
     },
     {
         "Name":"Forming",
-        "LInk":"Forming"
+        "link":"#forming"
     }
 ]

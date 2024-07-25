@@ -9,7 +9,7 @@ import GroundNuts from '../../Assets/GroundNuts.png';
 
 const About = () => {
   return (
-    <div className={styles.AboutContainer}>
+    <div id='about' className={styles.AboutContainer}>
         <div className={styles.AboutHeading}>
             <p>About Us</p>
         </div>
@@ -58,7 +58,7 @@ const About = () => {
 
             </div>
         </div>
-        <p className={styles.CarasoleHeading}> Some Photos From Our Fieald</p>
+        <p className={styles.CarasoleHeading}> Some Photos From Our Farm</p>
       <Carasole/>
     </div>
   )
