@@ -1,0 +1,19 @@
+.MenuContainer{
+    background-color: rgba(255, 0, 0, 0.403);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.MenuItem{
+    margin: 15px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.MenuItem:hover{
+    /* background-color: white; */
+    color: black;
+    
+}

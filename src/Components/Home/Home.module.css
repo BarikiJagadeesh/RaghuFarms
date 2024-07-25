@@ -1,0 +1,28 @@
+.HomeHeading{
+    text-align: center;
+    background-color: rgb(118, 237, 100);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.HomeHeading p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    
+}
+
+.Video{
+    width: 100%;
+    height: 500px;
+    background-image: url('https://www.shutterstock.com/shutterstock/videos/19996810/thumb/1.jpg?ip=x480');
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+.Video video{
+    width: 100%;
+    height: 100%;
+}

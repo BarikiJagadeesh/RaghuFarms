@@ -1,0 +1,16 @@
+.HeadingContainer{
+    text-align: center;
+    background-image: url('../../Assets/image.png');
+    padding: 10px;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.Heading{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
