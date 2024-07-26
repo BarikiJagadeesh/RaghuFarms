@@ -21,3 +21,13 @@
     font-weight: bold;
     margin: 0px;
 }
+
+@media (min-width:250px) and (max-width:760px) {
+    .LogoContainer img{
+        width: 50px;
+    }
+
+    .LogoContainer p{
+        font-size: 25px;
+    }
+}

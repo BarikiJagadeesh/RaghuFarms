@@ -1,10 +1,8 @@
 .MenuContainer{
-   
-    /* width: 500px; */
-    
+    /* position: relative; */
 }
 
-.MenuContainer ul{
+.MenuUl{
     list-style-type: none;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.599);
@@ -15,7 +13,7 @@
 
 }
 
-.MenuContainer ul li{
+.MenuUl li{
     display: inline;
     padding: 5px;
     margin:0px 25px;
@@ -24,13 +22,13 @@
     cursor: pointer;
 }
 
-.MenuContainer ul li a{
+.MenuUl li a{
     text-decoration: none;
     color: black;
 
 }
 
-.MenuContainer ul li:hover{
+.MenuUl li:hover{
     
     background-color: white;
     padding: 5px;
@@ -45,13 +43,37 @@
     border-radius: 20px;
 }
 
+.ShowMenuContainer{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    display: none;
+    margin: 5px;
+}
 
-@media (min-width:250px) and (max-width:550px) {
-    .MenuContainer{
-        width:100%
+.showMenuItem{
+    border: 1px solid black;
+    margin: 5px 0px;
+    width: 100%;
+
+}
+
+
+@media (min-width:250px) and (max-width:760px) {
+    .MenuUl{
+        /* width:100% */
+        display: none;
+
     }
 
-    .MenuContainer ul li{
-        margin:0px 10px;
+    .MenuUl li{
+        margin:0px 5px;
+    }
+
+    .ShowMenuContainer{
+        display: block;
     }
 }

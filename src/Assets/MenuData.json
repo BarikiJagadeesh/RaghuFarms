@@ -1,18 +1,22 @@
 [
     {
         "Name":"Home",
-        "link":"#home"
+        "link":"#home",
+        "icon":"https://cdn-icons-png.flaticon.com/128/609/609803.png"
     },
     {
         "Name":"About",
-        "link": "#about"
+        "link": "#about",
+        "icon":"https://cdn-icons-png.flaticon.com/128/3815/3815523.png"
     },
     {
         "Name": "Contact Us",
-        "link":"#contact"
+        "link":"#contact",
+        "icon":"https://cdn-icons-png.flaticon.com/128/3249/3249904.png"
     },
     {
         "Name":"Forming",
-        "link":"#forming"
+        "link":"#forming",
+        "icon":"https://cdn-icons-png.flaticon.com/128/5341/5341398.png"
     }
 ]
