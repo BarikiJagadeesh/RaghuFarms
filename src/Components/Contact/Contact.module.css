@@ -8,5 +8,76 @@
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.ContactData{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(135, 201, 198);
+    padding: 10px;
+    font-weight: 600;
+
+}
+
+.ContactDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 50px;
+
+}
+
+.Icons{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.ContactItem{
+    width: 600px;
+    margin: 10px;
+    justify-content: flex-start;
+    display: flex;
+    font-size: 25px;
+}
+
+iframe{
+    width: 600px;
+    height: 600px;
+}
+@media (min-width:250px) and (max-width:760px) {
+    .ContactHeading{
+        font-size: 20px;
+    }
+
+    .ContactData{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .ContactItem{
+        font-size: 16px;
+        justify-content: center;
+        width: inherit;
+    }
+
+    .ContactDetails{
+        margin-bottom: 20px;
+        width: 110%;
+        
+    }
+    .Icons{
+        width: 20px;
+        height: 20px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
 }

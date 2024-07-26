@@ -92,6 +92,10 @@
 
     }
 
+    .AboutHeading p{
+        font-size: 20px;
+    }
+
     .AboutformerImg img{
         width: 100%;
     }
@@ -112,5 +116,9 @@
     .CultivateImg{
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+
+    .ImgContainer p{
+        font-size: 20px;
     }
 }
