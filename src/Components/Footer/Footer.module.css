@@ -1,0 +1,49 @@
+.logo{
+    display: inline-block;
+}
+
+.logo a{
+    text-decoration: none;
+}
+.FooterContainer{
+    background-color: rgb(207, 97, 97);
+}
+
+.ClientsDetails{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+h4{
+    font-weight: bold;
+}
+.ClientsDetails ul{
+    list-style-type: none;
+
+}
+
+.ClientsDetails ul li{
+    margin-bottom: 10px;
+}
+
+.ClientsDetails li:hover{
+    color: blue;
+}
+
+.ClientsDetails a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width:250px) and (max-width:760px) {
+    .ClientsDetails{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+}

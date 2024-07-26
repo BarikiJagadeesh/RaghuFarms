@@ -1,17 +1,5 @@
 [
     {
-        "name":"Phone",
-        "value":"9000359864",
-        "icon":"https://cdn-icons-png.flaticon.com/128/724/724664.png",
-        "href":"https://wa.me/919000359864?text=Hello%2C%20I%20am%20interested%20in%20your%20services"
-    },
-    {
-        "name":"E-Mail",
-        "value":"raghavendragoud855@gmail.com",
-        "icon":"https://cdn-icons-png.flaticon.com/128/732/732200.png",
-        "href":"mailto:raghavendragoud855@gmail.com"
-    },
-    {
         "name":"Instagram",
         "value":"youth_farming_vlogs",
         "icon":"https://cdn-icons-png.flaticon.com/128/2111/2111463.png",
@@ -28,5 +16,10 @@
         "value":"youth_farming_vlogs",
         "icon":"https://cdn-icons-png.flaticon.com/128/15047/15047410.png",
         "href":"https://www.youtube.com/@Youth_farming_vlogs"
+    },
+    {
+        "name":"FaceBook",
+        "href":""
+
     }
 ]

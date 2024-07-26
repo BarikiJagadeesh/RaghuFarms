@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Home/>
         <About/>
         <Contact/>
+        <Footer/>
       </div>
     </Router>
     
