@@ -4,6 +4,18 @@
     text-align: center;
 }
 
+/* .AboutContainer{
+    opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+} */
+
+ .Animated_section{
+    /* opacity: 0; */
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.7s ease-out;
+ }
+
 .AboutHeading p{
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;

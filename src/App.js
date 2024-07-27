@@ -9,7 +9,6 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 
-
 function App() {
   return (
 

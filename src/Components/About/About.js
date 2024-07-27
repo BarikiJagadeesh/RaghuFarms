@@ -6,10 +6,58 @@ import Rose from '../../Assets/Rose.png';
 import RedNefiyar from '../../Assets/RedNefiyar.png';
 import Betal_leafe from '../../Assets/Betal_leafe.png';
 import GroundNuts from '../../Assets/GroundNuts.png';
+import { useInView } from 'react-intersection-observer';
+import { useSpring, animated } from 'react-spring';
 
 const About = () => {
+
+    const [ref1, inView1] = useInView({
+        triggerOnce: false, // Animation triggers only once
+        threshold: 0.5,    // 50% of the element should be visible to trigger
+      });
+
+      const [ref2, inView2] = useInView({
+        triggerOnce: false, // Animation triggers only once
+        threshold: 0.5,    // 50% of the element should be visible to trigger
+      });
+
+      const [ref3, inView3] = useInView({
+        triggerOnce: false, // Animation triggers only once
+        threshold: 0.5,    // 50% of the element should be visible to trigger
+      });
+
+      const [refImg, inView4]=useInView({
+        triggerOnce:false,
+        threshold:0.5,
+
+      })
+    
+      const animationProps1 = useSpring({
+        opacity: inView1 ? 1 : 0,
+        transform: inView1 ? 'translateX(0)' : 'translateX(-50px)',
+      });
+
+      const imgAnimatedProps =useSpring({
+        opacity:inView4?1:0,
+        transform:inView4?'translateX(0)': 'translateX(50px)'
+      })
+
+      const animationProps2 =useSpring({
+        opacity:inView2?1:0,
+        transform:inView2?'translateX(0)': 'translateX(50px)'
+      })
+
+      const animationProps3 =useSpring({
+        opacity:inView3?1:0,
+        transform:inView3?'translateX(0)': 'translateX(-50px)'
+      })
+     
+
+
+     console.log(inView1, inView2, inView3, inView4)
+
   return (
-    <div id='about' className={styles.AboutContainer}>
+    <div  id='about' className={styles.AboutContainer}>
         <div className={styles.AboutHeading}>
             <p>About Us</p>
         </div>
@@ -17,16 +65,16 @@ const About = () => {
             <div className={styles.AboutFormer}>
                 <div>
                     <p className={styles.FormerHeading}>Raghavendra Prasad Goud</p>
+                    
+                    <animated.p ref={ref1} style={animationProps1} className={` ${styles.FromerIntro} ${styles.Animated_section}`}>My name is <i><b>Raghavendra Prasad Goud.</b></i> I hold a Master's degree in Business Administration, a field that has equipped me with extensive knowledge and skills in the business sector. However, my passion for farming remains undiminished. Farming has always been close to my heart, and I believe it is a crucial aspect of our lives and society.</animated.p>
 
-                    <p className={` ${styles.FromerIntro}`}>My name is <i><b>Raghavendra Prasad Goud.</b></i> I hold a Master's degree in Business Administration, a field that has equipped me with extensive knowledge and skills in the business sector. However, my passion for farming remains undiminished. Farming has always been close to my heart, and I believe it is a crucial aspect of our lives and society.</p>
+                    <animated.p ref={ref2} style={animationProps2}  className={`${styles.FromerIntro} ${styles.Animated_section}`}>Every weekend, I make it a point to visit my village. There, I assist my parents with various farming tasks. This involvement not only keeps me grounded but also allows me to contribute to my family's livelihood. We are fortunate to own a tractor, which plays a vital role in our farming operations. The tractor significantly reduces the manual labor required, enhances productivity, and allows us to manage our land more effectively.</animated.p>
 
-                    <p className={styles.FromerIntro}>Every weekend, I make it a point to visit my village. There, I assist my parents with various farming tasks. This involvement not only keeps me grounded but also allows me to contribute to my family's livelihood. We are fortunate to own a tractor, which plays a vital role in our farming operations. The tractor significantly reduces the manual labor required, enhances productivity, and allows us to manage our land more effectively.</p>
-
-                    <p className={styles.FromerIntro}>Balancing a professional career and a commitment to farming has its challenges, but it is immensely rewarding. This blend of business acumen and agricultural knowledge enables me to appreciate and understand the importance of sustainable farming practices. It also provides a unique perspective on how modern business strategies can be applied to traditional farming methods to improve efficiency and sustainability.</p>
+                    <animated.p ref={ref3} style={animationProps3} className={`${styles.FromerIntro} ${styles.Animated_section}`}>Balancing a professional career and a commitment to farming has its challenges, but it is immensely rewarding. This blend of business acumen and agricultural knowledge enables me to appreciate and understand the importance of sustainable farming practices. It also provides a unique perspective on how modern business strategies can be applied to traditional farming methods to improve efficiency and sustainability.</animated.p>
                 </div>
-                <div className={styles.AboutformerImg}>
+                <animated.div ref={refImg} style={imgAnimatedProps} className={`${styles.AboutformerImg} ${styles.Animated_section}`}>
                     <img className={` img-thumbnail`} src={RaghuOx} alt='Raghu-photo'/>
-                </div>
+                </animated.div>
             </div>
 
             {/* what we caltivate */}
