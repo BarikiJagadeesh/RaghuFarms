@@ -11,6 +11,7 @@ import { useSpring, animated } from 'react-spring';
 
 const About = () => {
 
+    // This for Para1
     const [ref1, inView1] = useInView({
         triggerOnce: false, // Animation triggers only once
         threshold: 0.5,    // 50% of the element should be visible to trigger
@@ -30,6 +31,11 @@ const About = () => {
         triggerOnce:false,
         threshold:0.5,
 
+      })
+
+      const [refHead, inView5]=useInView({
+        triggerOnce:false,
+        threshold:0.1,
       })
     
       const animationProps1 = useSpring({
@@ -52,15 +58,18 @@ const About = () => {
         transform:inView3?'translateX(0)': 'translateX(-50px)'
       })
      
-
+      const AnimatedHeading=useSpring({
+        opacity:inView5? 1: 0,
+        transform:inView5? 'translateY(0)': 'translateY(50px)'
+      })
 
      console.log(inView1, inView2, inView3, inView4)
 
   return (
     <div  id='about' className={styles.AboutContainer}>
-        <div className={styles.AboutHeading}>
+        <animated.div ref={refHead} style={AnimatedHeading} className={`${styles.AboutHeading} ${styles.Animated_section}`}>
             <p>About Us</p>
-        </div>
+        </animated.div>
         <div className={styles.AboutData}>
             <div className={styles.AboutFormer}>
                 <div>
@@ -82,8 +91,8 @@ const About = () => {
             <div className={`${styles.WhatCulcontainer}`}>
                 <p className={`${styles.FormerHeading}`}>what we caltivate</p>
 
-                <p className={styles.CulPara}>
-                We cultivate roses, groundnuts, red nephiliyar, and betel leaves in our fields. Once the crops are harvested, we sell them in the nearby city.</p>
+                <animated.p  ref={ref3} style={animationProps3} className={`${styles.CulPara} ${styles.Animated_section}`}>
+                We cultivate roses, groundnuts, red nephiliyar, and betel leaves in our fields. Once the crops are harvested, we sell them in the nearby city.</animated.p>
 
                 <div className={`${styles.CultivateImg}`}>
                     <div className={styles.ImgContainer}>
