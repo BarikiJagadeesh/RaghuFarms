@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Carasole.module.css';
 import Tractor from '../../Assets/TractorImgInWater.jpg';
-import Raghu from '../../Assets/Raghu_ox2.jpg';
 import Farm from '../../Assets/FarmImg.png';
-import RaghuFrnd from '../../Assets/RaghuFrnd.png';
 import TractorLoade from '../../Assets/TractorLoade.png';
+import RaghuFather from '../../Assets/RaghuFather.png';
+import Paddy from '../../Assets/PaddyPlanting.png';
 
 const Carasole = () => {
   return (
@@ -26,7 +26,7 @@ const Carasole = () => {
                 </div>
                 </div>
                 <div className="carousel-item">
-                <img src={Raghu} className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
+                <img src={RaghuFather} className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
                     <h5>Farming With Oxes</h5>
                     <p>Me Doing Work with the Ox</p>
@@ -40,7 +40,7 @@ const Carasole = () => {
                 </div>
                 </div>
                 <div className="carousel-item">
-                <img src={RaghuFrnd} className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
+                <img src={Paddy} className={`d-block w-100 ${styles.CarasoleImg}`} alt="..."/>
                 <div className="carousel-caption d-none d-md-block">
                     <h5>Mango</h5>
                     <p>Eating Mango With My Friend</p>

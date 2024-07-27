@@ -33,9 +33,21 @@ const About = () => {
 
       })
 
+      
+
       const [refHead, inView5]=useInView({
         triggerOnce:false,
         threshold:0.1,
+      })
+
+      const [refCropImg1, inView6] = useInView({
+        triggerOnce:false,
+        threshold:0.5
+      })
+
+      const [refCropImg2, inView7] = useInView({
+        triggerOnce:false,
+        threshold:0.5
       })
     
       const animationProps1 = useSpring({
@@ -63,7 +75,16 @@ const About = () => {
         transform:inView5? 'translateY(0)': 'translateY(50px)'
       })
 
-     console.log(inView1, inView2, inView3, inView4)
+     const animatedCropImg1=useSpring({
+        opacity:inView6?1:0,
+        transform:inView6?'translateX(0)':'translateX(-50px)'
+     })
+
+     const animatedCropImg2=useSpring({
+        opacity:inView7?1:0,
+        transform:inView7?'translateX(0)':'translateX(50px)'
+     })
+
 
   return (
     <div  id='about' className={styles.AboutContainer}>
@@ -89,28 +110,28 @@ const About = () => {
             {/* what we caltivate */}
 
             <div className={`${styles.WhatCulcontainer}`}>
-                <p className={`${styles.FormerHeading}`}>what we caltivate</p>
+                <p className={`${styles.FormerHeading}`}>what we caltivate?</p>
 
                 <animated.p  ref={ref3} style={animationProps3} className={`${styles.CulPara} ${styles.Animated_section}`}>
                 We cultivate roses, groundnuts, red nephiliyar, and betel leaves in our fields. Once the crops are harvested, we sell them in the nearby city.</animated.p>
 
                 <div className={`${styles.CultivateImg}`}>
-                    <div className={styles.ImgContainer}>
+                    <animated.div ref={refCropImg1} style={animatedCropImg1} className={`${styles.ImgContainer} ${styles.Animated_section}`}>
                         <img className={`img-thumbnail`} src={Rose} alt='Rose'/>
                         <p>Rose Flower</p>
-                    </div>
-                    <div className={styles.ImgContainer}>
+                    </animated.div>
+                    <animated.div ref={refCropImg1} style={animatedCropImg1} className={`${styles.ImgContainer} ${styles.Animated_section}`}>
                         <img className={`img-thumbnail`} src={RedNefiyar} alt='RedNefiyar'/>
                         <p>Red Nefliyar </p>
-                    </div>
-                    <div className={styles.ImgContainer}>
+                    </animated.div>
+                    <animated.div ref={refCropImg2} style={animatedCropImg2}  className={`${styles.ImgContainer} ${styles.Animated_section}`}>
                         <img className={`img-thumbnail`} src={Betal_leafe} alt='Betal_leafe'/>
                         <p>Betal leafe</p>
-                    </div>
-                    <div className={styles.ImgContainer}>
+                    </animated.div>
+                    <animated.div ref={refCropImg2} style={animatedCropImg2} className={`${styles.ImgContainer} ${styles.Animated_section}`}>
                         <img className={`img-thumbnail`} src={GroundNuts} alt='GroundNuts'/>
                         <p>Ground Nuts</p>
-                    </div>
+                    </animated.div>
                 </div>
 
             </div>
