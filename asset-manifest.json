@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/RaghuFarms/static/css/main.df218d26.css",
-    "main.js": "/RaghuFarms/static/js/main.68f070c3.js",
+    "main.css": "/RaghuFarms/static/css/main.aad89a39.css",
+    "main.js": "/RaghuFarms/static/js/main.e292b63a.js",
     "static/js/453.21d624fc.chunk.js": "/RaghuFarms/static/js/453.21d624fc.chunk.js",
     "static/media/Raghu.mp4": "/RaghuFarms/static/media/Raghu.36d45e8f7b8c6f30e021.mp4",
     "static/media/PaddyPlanting.png": "/RaghuFarms/static/media/PaddyPlanting.0527eb3c1186f7b6061c.png",
     "static/media/RaghuFather.png": "/RaghuFarms/static/media/RaghuFather.3d926f3f49dd7a9082ab.png",
+    "static/media/logo192.png": "/RaghuFarms/static/media/logo192.45b8dab5faa3cff380b7.png",
     "static/media/RedNefiyar.png": "/RaghuFarms/static/media/RedNefiyar.50623fd4f4e615ef28ed.png",
     "static/media/Betal_leafe.png": "/RaghuFarms/static/media/Betal_leafe.2f362fc8e4ecd27ffe1e.png",
     "static/media/Rose.png": "/RaghuFarms/static/media/Rose.a492a09e3b6d62c352b4.png",
@@ -14,16 +15,15 @@
     "static/media/TractorLoade.png": "/RaghuFarms/static/media/TractorLoade.7ec51a430a8f88efb2fa.png",
     "static/media/Raghu_Ox.jpg": "/RaghuFarms/static/media/Raghu_Ox.b89ecf108339200fd20b.jpg",
     "static/media/GreenField.png": "/RaghuFarms/static/media/GreenField.c8729b90969558b33e02.png",
-    "static/media/Logo.jpg": "/RaghuFarms/static/media/Logo.98351ba9cbf7a5a6a0c0.jpg",
     "static/media/TractorImgInWater.jpg": "/RaghuFarms/static/media/TractorImgInWater.4f50945c48e53825eff9.jpg",
     "static/media/Video-Background.jpg": "/RaghuFarms/static/media/Video-Background.5761537dda8829148363.jpg",
     "index.html": "/RaghuFarms/index.html",
-    "main.df218d26.css.map": "/RaghuFarms/static/css/main.df218d26.css.map",
-    "main.68f070c3.js.map": "/RaghuFarms/static/js/main.68f070c3.js.map",
+    "main.aad89a39.css.map": "/RaghuFarms/static/css/main.aad89a39.css.map",
+    "main.e292b63a.js.map": "/RaghuFarms/static/js/main.e292b63a.js.map",
     "453.21d624fc.chunk.js.map": "/RaghuFarms/static/js/453.21d624fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df218d26.css",
-    "static/js/main.68f070c3.js"
+    "static/css/main.aad89a39.css",
+    "static/js/main.e292b63a.js"
   ]
 }
