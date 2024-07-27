@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RaghuFarms/static/css/main.62eef4e5.css",
-    "main.js": "/RaghuFarms/static/js/main.c24b1ddf.js",
+    "main.css": "/RaghuFarms/static/css/main.2f096d7b.css",
+    "main.js": "/RaghuFarms/static/js/main.52826ef0.js",
     "static/js/453.21d624fc.chunk.js": "/RaghuFarms/static/js/453.21d624fc.chunk.js",
     "static/media/Raghu.mp4": "/RaghuFarms/static/media/Raghu.36d45e8f7b8c6f30e021.mp4",
     "static/media/RedNefiyar.png": "/RaghuFarms/static/media/RedNefiyar.50623fd4f4e615ef28ed.png",
@@ -18,12 +18,12 @@
     "static/media/Raghu_ox2.jpg": "/RaghuFarms/static/media/Raghu_ox2.aa92f1032bc77c4d7bfd.jpg",
     "static/media/Video-Background.jpg": "/RaghuFarms/static/media/Video-Background.5761537dda8829148363.jpg",
     "index.html": "/RaghuFarms/index.html",
-    "main.62eef4e5.css.map": "/RaghuFarms/static/css/main.62eef4e5.css.map",
-    "main.c24b1ddf.js.map": "/RaghuFarms/static/js/main.c24b1ddf.js.map",
+    "main.2f096d7b.css.map": "/RaghuFarms/static/css/main.2f096d7b.css.map",
+    "main.52826ef0.js.map": "/RaghuFarms/static/js/main.52826ef0.js.map",
     "453.21d624fc.chunk.js.map": "/RaghuFarms/static/js/453.21d624fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62eef4e5.css",
-    "static/js/main.c24b1ddf.js"
+    "static/css/main.2f096d7b.css",
+    "static/js/main.52826ef0.js"
   ]
 }
