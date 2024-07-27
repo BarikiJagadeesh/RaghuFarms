@@ -5,11 +5,24 @@ import Farm from '../../Assets/FarmImg.png';
 import TractorLoade from '../../Assets/TractorLoade.png';
 import RaghuFather from '../../Assets/RaghuFather.png';
 import Paddy from '../../Assets/PaddyPlanting.png';
+import { useInView } from 'react-intersection-observer';
+import { useSpring,animated } from 'react-spring';
 
 const Carasole = () => {
+
+    const [ref, inView ] = useInView({
+        triggerOnce:false,
+        threshold:0.5
+    })
+
+
+    const animatedProp =useSpring({
+        opacity:inView? 1:0,
+        transform:inView?'translateY(0px)': 'translateY(100px)'
+    })
   return (
     <>
-        <div id="carouselExampleCaptions" className={`carousel slide ${styles.Carasolecontainer}`} data-bs-ride="carousel">
+        <animated.div ref={ref} id="carouselExampleCaptions" style={animatedProp} className={`carousel slide ${styles.Carasolecontainer} ${styles.Animated_section}`} data-bs-ride="carousel">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -62,7 +75,7 @@ const Carasole = () => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-        </div>
+        </animated.div>
     </>
   )
 }

@@ -122,7 +122,7 @@ const About = () => {
                     </animated.div>
                     <animated.div ref={refCropImg1} style={animatedCropImg1} className={`${styles.ImgContainer} ${styles.Animated_section}`}>
                         <img className={`img-thumbnail`} src={RedNefiyar} alt='RedNefiyar'/>
-                        <p>Red Nefliyar </p>
+                        <p>Red Napier </p>
                     </animated.div>
                     <animated.div ref={refCropImg2} style={animatedCropImg2}  className={`${styles.ImgContainer} ${styles.Animated_section}`}>
                         <img className={`img-thumbnail`} src={Betal_leafe} alt='Betal_leafe'/>

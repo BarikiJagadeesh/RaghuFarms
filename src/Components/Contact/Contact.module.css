@@ -48,6 +48,13 @@ iframe{
     width: 600px;
     height: 600px;
 }
+
+.Animated_section{
+    /* opacity: 0; */
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+ }
+ 
 @media (min-width:250px) and (max-width:760px) {
     .ContactHeading{
         font-size: 20px;
